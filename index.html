@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>React app with Skypack</title>
+  </head>
+  <body>
+    <div id="app"></div> 
+    <!--<script type="module" src="https://cdn.skypack.dev/es-module-shims"></script>-->
+    <script type="module" src="https://jspm.dev/es-module-shims"></script>
+    <script type="importmap-shim">
+      {
+      "imports": {
+        "react": "https://cdn.skypack.dev/react?min",
+        "react-dom": "https://cdn.skypack.dev/react-dom?min",
+        "htm": "https://cdn.skypack.dev/htm?min"
+      }
+    }
+    </script>
+    <script type="module-shim" src="main.js">
+    </script>
+  </body>
+</html>
